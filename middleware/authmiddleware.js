@@ -16,7 +16,7 @@ token = token.slice(7, token.length)
 
 try{
 
-const decoded = jwt.verify(token,"secretkey")
+const decoded = jwt.verify(token, process.env.JWT_SECRET,)
 
 db.query(
 "SELECT active_token FROM users WHERE id=?",
