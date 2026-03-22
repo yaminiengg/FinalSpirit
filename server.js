@@ -60,12 +60,12 @@ app.use("/api/feedback", feedbackRoutes)
 app.use("/api/notes", notesRoutes)
 
 app.use("/uploads", express.static("uploads"))
-
+/*
 app.listen(5000, () => {
   console.log("🚀 Server started on port 5000");
 });
-/*
+*/
 app.listen(PORT, ()=>{
   console.log("Server running")
 })
-*/
+
